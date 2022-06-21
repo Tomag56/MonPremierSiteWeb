@@ -1,0 +1,35 @@
+.toolbar{
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+
+  &_partUn{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    span{
+      margin: auto 0;
+    }
+  }
+      &_partDeux{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        ul{
+          list-style: none;
+          li{
+            display: inline-block;
+            margin: 0 25px;
+          }
+        }
+    }
+
+
+}
+
+
+  mat-icone{
+    visibility: hidden;
+
+  }
+
