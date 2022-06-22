@@ -3,8 +3,10 @@ import { CommonModule } from '@angular/common';
 import {HeaderComponent} from "./components/header/header.component";
 import { HomePageComponent } from './components/home-page/home-page.component';
 import {SharedModule} from "../shared/shared.module";
-import {RouterModule, RouterOutlet} from "@angular/router";
+import {RouterModule} from "@angular/router";
 import { MonParcoursComponent } from './components/mon-parcours/mon-parcours.component';
+import { FooterComponent } from './components/footer/footer.component';
+import {NgxTypedJsModule} from "ngx-typed-js";
 
 
 
@@ -12,19 +14,22 @@ import { MonParcoursComponent } from './components/mon-parcours/mon-parcours.com
   declarations: [
     HeaderComponent,
     HomePageComponent,
-    MonParcoursComponent
+    MonParcoursComponent,
+    FooterComponent
 
   ],
 
   imports: [
     CommonModule,
     SharedModule,
-    RouterModule
+    RouterModule,
+    NgxTypedJsModule
 
   ],
 
   exports: [
-HeaderComponent
+    HeaderComponent,
+    FooterComponent
 
   ],
 })

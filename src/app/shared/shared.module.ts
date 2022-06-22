@@ -5,7 +5,7 @@ import {MatIconModule} from "@angular/material/icon";
 import {MatButtonModule} from "@angular/material/button";
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {MatSlideToggleModule} from "@angular/material/slide-toggle";
-
+import {NgxTypedJsModule} from "ngx-typed-js"
 
 @NgModule({
   declarations: [],
@@ -19,6 +19,10 @@ import {MatSlideToggleModule} from "@angular/material/slide-toggle";
     FormsModule,
     ReactiveFormsModule,
     MatSlideToggleModule,
+    NgxTypedJsModule,
+
+
+
 
   ],
 })
