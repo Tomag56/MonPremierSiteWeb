@@ -6,6 +6,9 @@ import {MatButtonModule} from "@angular/material/button";
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {MatSlideToggleModule} from "@angular/material/slide-toggle";
 import {NgxTypedJsModule} from "ngx-typed-js"
+import {FontAwesomeModule} from "@fortawesome/angular-fontawesome";
+import {MatSidenavModule} from "@angular/material/sidenav";
+import {FlexLayoutModule} from "@angular/flex-layout";
 
 @NgModule({
   declarations: [],
@@ -20,7 +23,9 @@ import {NgxTypedJsModule} from "ngx-typed-js"
     ReactiveFormsModule,
     MatSlideToggleModule,
     NgxTypedJsModule,
-
+    FontAwesomeModule,
+    MatSidenavModule,
+    FlexLayoutModule
 
 
 

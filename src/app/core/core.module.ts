@@ -7,6 +7,7 @@ import {RouterModule} from "@angular/router";
 import { MonParcoursComponent } from './components/mon-parcours/mon-parcours.component';
 import { FooterComponent } from './components/footer/footer.component';
 import {NgxTypedJsModule} from "ngx-typed-js";
+import  {FontAwesomeModule}  from  '@fortawesome/angular-fontawesome' ;
 
 
 
@@ -23,7 +24,8 @@ import {NgxTypedJsModule} from "ngx-typed-js";
     CommonModule,
     SharedModule,
     RouterModule,
-    NgxTypedJsModule
+    NgxTypedJsModule,
+    FontAwesomeModule,
 
   ],
 

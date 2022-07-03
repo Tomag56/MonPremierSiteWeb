@@ -1,36 +1,49 @@
-.toolbar{
-  display: flex;
-  justify-content: space-between;
-  align-content: center;
 
-  &_partUn{
+  .toolbar{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-content: center;
-    letter-spacing: 2px;
-    span{
-      margin: auto 0;
-    }
-  }
-      &_partDeux{
-        display: flex;
-        justify-content: center;
-        align-content: center;
-        ul{
-          list-style: none;
-          li{
-            display: inline-block;
-            margin: 0 25px;
-          }
+    width: 100%;
+    &_partUn{
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      letter-spacing: 2px;
+      span{
+        margin: auto 0;
+      }
+      &_menu{
+        display: none;
+        @media (max-width: 959px) {
+          display: block;
         }
+      }
     }
-
-
-}
-
-
-  mat-icone{
-    visibility: hidden;
-
+    &_partDeux{
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      ul{
+        list-style: none;
+        li{
+          display: inline-block;
+          margin: 0 25px;
+        }
+      }
+    }
   }
+
+  //navbarMediaQ{
+  //  display: none;
+  ////}
+  //@media(max-width: 1200px){
+  //.mat-toolbar {
+  //  display: none;
+  //}
+  //  .mat-drawer-container {
+  //    display: block;
+  //    height: 1500px;
+  //  }
+  //}
+
 

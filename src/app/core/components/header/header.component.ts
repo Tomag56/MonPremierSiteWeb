@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, EventEmitter, OnInit, Output} from '@angular/core';
 import {FormBuilder, Validators} from "@angular/forms";
 
 
@@ -10,13 +10,19 @@ import {FormBuilder, Validators} from "@angular/forms";
 
 
 export class HeaderComponent implements OnInit{
+
   name!: string;
   home!: string;
   parcours!: string;
   travaux!: string;
   contacter!: string;
-
   isChecked = true;
+
+  // Pour la sidebar
+  showFiller = false;
+// Activer la sidebar
+  @Output() public sidenavToggle = new EventEmitter();
+
   formGroup = this._formBuilder.group({
     enablelight: '',
     acceptTerms: ['', Validators.requiredTrue],
@@ -35,6 +41,10 @@ export class HeaderComponent implements OnInit{
 
   onFormSubmit() {
     alert(JSON.stringify(this.formGroup.value, null, 2));
+  }
+
+  public onToggleSidenav = () => {
+    this.sidenavToggle.emit();
   }
 }
 

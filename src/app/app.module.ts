@@ -4,6 +4,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {CoreModule} from "./core/core.module";
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import {SharedModule} from "./shared/shared.module";
 
 
 @NgModule({
@@ -12,14 +14,17 @@ import {CoreModule} from "./core/core.module";
 
 
 
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    BrowserAnimationsModule,
-    CoreModule,
 
   ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        BrowserAnimationsModule,
+        CoreModule,
+        FontAwesomeModule,
+        SharedModule,
+
+    ],
 
   providers: [],
   bootstrap: [AppComponent]

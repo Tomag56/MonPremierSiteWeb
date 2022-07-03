@@ -2,11 +2,27 @@
 @import "style-paths/variable";
 
 html, body {
-  height: 100%;
+
 }
 body {
-  background-color: $bg-sombre;
+  //background-color: $dark-theme-background;
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
 
+}
+
+.page{
+  min-height:100vh;
+  display:flex; /* 2 */
+  flex-direction:column; /* 3 */
+
+
+  .content {
+    flex-grow:1;
+    padding-top: 40px;
+  }
+  @media (max-width: 1200px){
+
+
+  }
 }
