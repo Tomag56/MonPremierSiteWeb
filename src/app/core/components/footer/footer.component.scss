@@ -1,25 +1,13 @@
-  mat-toolbar{
+@import '../../../../themeAngular/_variable';
+
+mat-toolbar{
 
     mat-toolbar-row{
       display: flex;
       justify-content: center;
       align-items: center;
-      ul{
-
-        list-style: none;
-        li{
-          display: inline-block;
-          margin-right: 3em;
-          a{
-            text-decoration: none;
-            color: #f50057 ;
-          }
-
-
-          i{
-            color: #e91e63;
-          }
-        }
+      button{
+        @include colorTexte;
       }
     }
   }

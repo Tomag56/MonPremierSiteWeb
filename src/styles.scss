@@ -1,41 +1,45 @@
 /* You can add global styles to this file, and also import other style files */
+@import './themeAngular/_variable';
+
 *{
   margin: 0;
   box-sizing: border-box;
 }
 
-
-.toolbar{
-  display: flex;
-  justify-content: space-between;
-  align-content: center;
-  width: 100%;
-  &_partUn{
+header{
+  .toolbar{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-content: center;
-    letter-spacing: 2px;
-    span{
-      margin: auto 0;
-    }
-    &_menu{
-      display: none;
-      @media (max-width: 959px) {
-        display: block;
+    width: 100%;
+    &_partUn{
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      letter-spacing: 2px;
+      span{
+        margin: auto 0;
+      }
+      &_menu{
+        display: none;
+        @media (max-width: 959px) {
+          display: block;
+        }
       }
     }
-  }
-  &_partDeux{
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    ul{
-      list-style: none;
-      li{
-        display: inline-block;
-        margin: 0 25px;
+    &_partDeux{
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      ul{
+        list-style: none;
+        li{
+          display: inline-block;
+          margin: 0 25px;
+        }
       }
     }
   }
 }
+
 

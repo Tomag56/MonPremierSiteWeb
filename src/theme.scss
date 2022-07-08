@@ -1,4 +1,4 @@
-@use '@angular/material' as mat;
+@use 'node_modules/@angular/material/index' as mat;
 
 @include mat.core();
 
@@ -26,10 +26,10 @@ $li-theme: mat.define-light-theme((
 ));
 
 
-.dark-theme{
+.dark-mode{
   @include mat.all-component-themes($my-theme);
 }
-.light-theme{
+.light-mode{
   @include mat.all-component-themes($li-theme);
 }
 

@@ -1,4 +1,5 @@
 
+@import '../../../../themeAngular/_variable';
 
 .home{
   margin: 0;
@@ -20,7 +21,13 @@
       letter-spacing: 4px;
       line-height: 50px;
 
-      span{
+      button{
+
+       @include colorTexte;
+        cursor: none;
+        font-size: 1.1em;
+        font-weight: 600;
+        letter-spacing: 4px;
 
       }
     }

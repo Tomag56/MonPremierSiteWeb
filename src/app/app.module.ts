@@ -4,11 +4,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {CoreModule} from "./core/core.module";
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
 import {SharedModule} from "./shared/shared.module";
-import {NgxTypedJsModule} from "ngx-typed-js";
+import {MatToolbarModule} from "@angular/material/toolbar";
+import {MatSlideToggleModule} from "@angular/material/slide-toggle";
+import {MatSidenavModule} from "@angular/material/sidenav";
+import {MatDialogModule} from "@angular/material/dialog";
+import {FormsModule} from "@angular/forms";
 import {LayoutModule} from "@angular/cdk/layout";
-import {MatIconModule} from "@angular/material/icon";
 
 
 
@@ -23,11 +26,14 @@ import {MatIconModule} from "@angular/material/icon";
       CoreModule,
       FontAwesomeModule,
       SharedModule,
-      NgxTypedJsModule,
-      LayoutModule,
-      MatIconModule
-
-
+      BrowserModule,
+      BrowserAnimationsModule,
+      MatToolbarModule,
+      MatSlideToggleModule,
+      MatSidenavModule,
+      MatDialogModule,
+      FormsModule,
+      LayoutModule
     ],
 
   providers: [],

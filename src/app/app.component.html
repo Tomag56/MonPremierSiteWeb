@@ -1,5 +1,3 @@
-
-
 <mat-sidenav-container >
   <mat-sidenav #sidenav mode="over"  >
           <div class="sidenav_conteneur">
@@ -19,12 +17,10 @@
   </mat-sidenav>
   <mat-sidenav-content class="page">
     <header>
-<!--      <app-header (sidenavToggle)="sidenav.toggle()"></app-header>-->
-
       <mat-toolbar color="primary" class="toolbar">
         <div class="toolbar_partUn" ><button href="#" mat-icon-button aria-label="Icon Home">
           <div  >
-            <button mat-icon-button (click)="sidenav.toggle()" fxShow.lt-md class="toolbar_partUn_menu">
+            <button mat-icon-button fxShow.lt-md class="toolbar_partUn_menu" (click)="sidenav.toggle()">
               <mat-icon>menu</mat-icon>
             </button>
             <button mat-icon-button fxHide.lt-md>
@@ -41,7 +37,7 @@
           </ul>
         </div>
         <div class="toolbar_switchLight">
-          <mat-slide-toggle [formControl]="toggleControl" ><mat-icon>light</mat-icon></mat-slide-toggle>
+          <mat-slide-toggle (click)="toggleDarkMode()" [(ngModel)]="isDarkMode" ><mat-icon>light</mat-icon></mat-slide-toggle>
         </div>
       </mat-toolbar>
     </header>
