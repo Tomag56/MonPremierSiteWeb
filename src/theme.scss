@@ -4,14 +4,33 @@
 
 $my-primary: mat.define-palette(mat.$pink-palette, A400);
 $my-accent: mat.define-palette(mat.$grey-palette, 900);
-$dark-theme-background :mat.define-palette(mat.$grey-palette, 800);
+
+
+//color light
+$li-primary: mat.define-palette(mat.$indigo-palette, A400);
+$li-accent: mat.define-palette(mat.$blue-gray-palette, 900);
+
 
 $my-theme: mat.define-dark-theme((
   color: (
     primary: $my-primary,
     accent: $my-accent,
+     )
+));
 
+$li-theme: mat.define-light-theme((
+  color: (
+    primary: $li-primary,
+    accent: $li-accent,
   )
 ));
+
+
+.dark-theme{
+  @include mat.all-component-themes($my-theme);
+}
+.light-theme{
+  @include mat.all-component-themes($li-theme);
+}
 
 @include mat.all-component-themes($my-theme);

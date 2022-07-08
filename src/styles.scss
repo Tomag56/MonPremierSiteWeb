@@ -1,28 +1,41 @@
 /* You can add global styles to this file, and also import other style files */
-@import "style-paths/variable";
-
-html, body {
-
-}
-body {
-  //background-color: $dark-theme-background;
+*{
   margin: 0;
-  font-family: Roboto, "Helvetica Neue", sans-serif;
-
+  box-sizing: border-box;
 }
 
-.page{
-  min-height:100vh;
-  display:flex; /* 2 */
-  flex-direction:column; /* 3 */
 
-
-  .content {
-    flex-grow:1;
-    padding-top: 40px;
+.toolbar{
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  width: 100%;
+  &_partUn{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    letter-spacing: 2px;
+    span{
+      margin: auto 0;
+    }
+    &_menu{
+      display: none;
+      @media (max-width: 959px) {
+        display: block;
+      }
+    }
   }
-  @media (max-width: 1200px){
-
-
+  &_partDeux{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    ul{
+      list-style: none;
+      li{
+        display: inline-block;
+        margin: 0 25px;
+      }
+    }
   }
 }
+

@@ -4,7 +4,7 @@
   margin: 0;
   display: flex;
   justify-content: space-around;
-  //background-color: $bg-sombre;
+
 
   &_left{
     display: flex;
@@ -12,9 +12,8 @@
     justify-content: space-between;
     max-height: 450px;
 
-
     h1{
-      color: white;
+
       font-size: 3.5em;
       min-width: 750px;
       font-weight: 600;
@@ -22,13 +21,13 @@
       line-height: 50px;
 
       span{
-        color: #e91e63;
+
       }
     }
     p{
       font-size: 1.5em;
       font-weight: 500;
-      color: white;
+
       max-width: 650px;
       line-height: 32px;
 

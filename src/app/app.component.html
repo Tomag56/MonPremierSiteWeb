@@ -1,5 +1,7 @@
+
+
 <mat-sidenav-container >
-  <mat-sidenav #sidenav mode="over" >
+  <mat-sidenav #sidenav mode="over"  >
           <div class="sidenav_conteneur">
             <button type="button" mat-raised-button color="primary" routerLink="">
               Home
@@ -17,10 +19,38 @@
   </mat-sidenav>
   <mat-sidenav-content class="page">
     <header>
-      <app-header (sidenavToggle)="sidenav.toggle()"></app-header>
+<!--      <app-header (sidenavToggle)="sidenav.toggle()"></app-header>-->
+
+      <mat-toolbar color="primary" class="toolbar">
+        <div class="toolbar_partUn" ><button href="#" mat-icon-button aria-label="Icon Home">
+          <div  >
+            <button mat-icon-button (click)="sidenav.toggle()" fxShow.lt-md class="toolbar_partUn_menu">
+              <mat-icon>menu</mat-icon>
+            </button>
+            <button mat-icon-button fxHide.lt-md>
+              <mat-icon routerLink="" fxHide.lt-md>home</mat-icon>
+            </button>
+          </div>
+        </button><span>Thomas Granger</span>
+        </div>
+        <div class="toolbar_partDeux" fxHide.lt-md>
+          <ul>
+            <li><a routerLink="/mon-parcours"><button mat-raised-button class="btn" color="accent">Mon Parcours</button></a></li>
+            <li><a routerLink="/mes-projets"><button mat-raised-button class="btn" color="accent">Mes Projets</button></a></li>
+            <li><a routerLink="/contact"><button mat-raised-button class="btn" color="accent">Contact</button></a></li>
+          </ul>
+        </div>
+        <div class="toolbar_switchLight">
+          <mat-slide-toggle [formControl]="toggleControl" ><mat-icon>light</mat-icon></mat-slide-toggle>
+        </div>
+      </mat-toolbar>
     </header>
     <main class="content">
-      <router-outlet></router-outlet>
+
+
+      <router-outlet ></router-outlet>
+
+
     </main>
     <footer>
       <app-footer></app-footer>

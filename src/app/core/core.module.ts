@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import {HeaderComponent} from "./components/header/header.component";
+
 import { HomePageComponent } from './components/home-page/home-page.component';
 import {SharedModule} from "../shared/shared.module";
 import {RouterModule} from "@angular/router";
@@ -11,9 +11,9 @@ import  {FontAwesomeModule}  from  '@fortawesome/angular-fontawesome' ;
 
 
 
+
 @NgModule({
   declarations: [
-    HeaderComponent,
     HomePageComponent,
     MonParcoursComponent,
     FooterComponent
@@ -30,7 +30,7 @@ import  {FontAwesomeModule}  from  '@fortawesome/angular-fontawesome' ;
   ],
 
   exports: [
-    HeaderComponent,
+
     FooterComponent
 
   ],
