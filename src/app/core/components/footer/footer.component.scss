@@ -1,14 +1,23 @@
 @import '../../../../themeAngular/_variable';
 
-mat-toolbar{
-
-    mat-toolbar-row{
+.footer{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+    &_icone{
       display: flex;
       justify-content: center;
       align-items: center;
-      button{
-        @include colorTexte;
+
+      img{
+        width: 2em;
+       align-items: center;
       }
+      a{
+        margin: 0;
+        padding: 0;
+      }
+
+
     }
   }
-

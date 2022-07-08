@@ -1,0 +1,28 @@
+@import '../../../../themeAngular/_variable';
+
+.parcours{
+  margin: 1em 6em;
+
+  &_intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-height: 450px;
+
+    h1{
+      font-size: 2em;
+      @include h1intro;
+      max-width: 750px;
+    }
+    button{
+      @include colorTexte;
+      cursor: none;
+      font-size: 1.1em;
+      font-weight: 600;
+      letter-spacing: 4px;
+    }
+    p{
+      @include texte;
+    }
+  }
+}

@@ -14,26 +14,25 @@ import {FormsModule} from "@angular/forms";
 import {LayoutModule} from "@angular/cdk/layout";
 
 
-
 @NgModule({
   declarations: [
     AppComponent,
   ],
     imports: [
-      BrowserModule,
-      AppRoutingModule,
-      BrowserAnimationsModule,
-      CoreModule,
-      FontAwesomeModule,
-      SharedModule,
-      BrowserModule,
-      BrowserAnimationsModule,
-      MatToolbarModule,
-      MatSlideToggleModule,
-      MatSidenavModule,
-      MatDialogModule,
-      FormsModule,
-      LayoutModule
+        BrowserModule,
+        AppRoutingModule,
+        BrowserAnimationsModule,
+        CoreModule,
+        FontAwesomeModule,
+        SharedModule,
+        BrowserModule,
+        BrowserAnimationsModule,
+        MatToolbarModule,
+        MatSlideToggleModule,
+        MatSidenavModule,
+        MatDialogModule,
+        FormsModule,
+        LayoutModule
     ],
 
   providers: [],

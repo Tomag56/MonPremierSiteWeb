@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
 import { HomePageComponent } from './components/home-page/home-page.component';
 import {SharedModule} from "../shared/shared.module";
 import {RouterModule} from "@angular/router";
@@ -8,6 +7,7 @@ import { MonParcoursComponent } from './components/mon-parcours/mon-parcours.com
 import { FooterComponent } from './components/footer/footer.component';
 import {NgxTypedJsModule} from "ngx-typed-js";
 import  {FontAwesomeModule}  from  '@fortawesome/angular-fontawesome' ;
+import {MatTabsModule} from "@angular/material/tabs";
 
 
 
@@ -26,6 +26,8 @@ import  {FontAwesomeModule}  from  '@fortawesome/angular-fontawesome' ;
     RouterModule,
     NgxTypedJsModule,
     FontAwesomeModule,
+    MatTabsModule,
+
 
   ],
 

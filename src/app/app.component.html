@@ -1,4 +1,4 @@
-<mat-sidenav-container >
+<mat-sidenav-container>
   <mat-sidenav #sidenav mode="over"  >
           <div class="sidenav_conteneur">
             <button type="button" mat-raised-button color="primary" routerLink="">
@@ -17,10 +17,10 @@
   </mat-sidenav>
   <mat-sidenav-content class="page">
     <header>
-      <mat-toolbar color="primary" class="toolbar">
-        <div class="toolbar_partUn" ><button href="#" mat-icon-button aria-label="Icon Home">
-          <div  >
-            <button mat-icon-button fxShow.lt-md class="toolbar_partUn_menu" (click)="sidenav.toggle()">
+      <mat-toolbar color="primary" class="toolbar" >
+        <div class="toolbar_partUn"><button href="#" mat-icon-button aria-label="Icon Home">
+          <div>
+            <button mat-icon-button  class="toolbar_partUn_menu" (click)="sidenav.toggle()">
               <mat-icon>menu</mat-icon>
             </button>
             <button mat-icon-button fxHide.lt-md>
@@ -41,13 +41,13 @@
         </div>
       </mat-toolbar>
     </header>
-    <main class="content">
 
+    <main class="content">
 
       <router-outlet ></router-outlet>
 
-
     </main>
+
     <footer>
       <app-footer></app-footer>
     </footer>

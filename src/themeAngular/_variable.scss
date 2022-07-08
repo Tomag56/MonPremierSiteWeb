@@ -5,3 +5,16 @@
 //<button mat-icon-button color="primary">
 //  @import '../../../../themeAngular/_variable';
 }
+
+@mixin h1intro{
+
+  font-weight: 600;
+  letter-spacing: 4px;
+  line-height: 50px;
+}
+
+@mixin texte{
+  font-size: 1.5em;
+  font-weight: 500;
+  line-height: 32px;
+}
