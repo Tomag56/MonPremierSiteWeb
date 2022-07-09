@@ -1,16 +1,13 @@
-
 .page{
   min-height:100vh;
   display:flex; /* 2 */
   flex-direction:column; /* 3 */
-
-
   .content {
+
     flex-grow:1;
-    padding-top: 40px;
+
   }
 }
-
 .sidenav_conteneur {
   width: 13em;
   display: flex;
@@ -19,3 +16,41 @@
     margin: 5px;
   }
  }
+
+
+header{
+  .toolbar{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    width: 100%;
+    &_partUn{
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      letter-spacing: 2px;
+      span{
+        margin: auto 0;
+      }
+      &_menu{
+        display: none;
+        @media (max-width: 959px) {
+          display: block;
+        }
+      }
+    }
+    &_partDeux{
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      ul{
+        list-style: none;
+        li{
+          display: inline-block;
+          margin: 0 25px;
+        }
+      }
+    }
+  }
+}
+

@@ -8,6 +8,9 @@ import { FooterComponent } from './components/footer/footer.component';
 import {NgxTypedJsModule} from "ngx-typed-js";
 import  {FontAwesomeModule}  from  '@fortawesome/angular-fontawesome' ;
 import {MatTabsModule} from "@angular/material/tabs";
+import {MatCardModule} from "@angular/material/card";
+import {MatDividerModule} from "@angular/material/divider";
+import {MatExpansionModule} from "@angular/material/expansion";
 
 
 
@@ -27,6 +30,9 @@ import {MatTabsModule} from "@angular/material/tabs";
     NgxTypedJsModule,
     FontAwesomeModule,
     MatTabsModule,
+    MatCardModule,
+    MatDividerModule,
+    MatExpansionModule,
 
 
   ],
