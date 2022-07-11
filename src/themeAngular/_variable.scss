@@ -116,14 +116,15 @@
 
 @mixin texte{
   font-weight: 500;
-  line-height: 2em;
+  line-height: 1.5em;
   text-align: justify;
+
 }
 
 @mixin texteMobile{
   @media (max-width: 960px) {
     font-size: 1em;
-    line-height:1.3em;
+    line-height:1.2em;
   }
 }
 

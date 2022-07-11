@@ -18,7 +18,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    max-height: 450px;
+
 
     h2{
       @include h2-projet;
@@ -108,5 +108,29 @@
         }
       }
     }
+  }
+  &_formation{
+    &_header{
+      height: 4em;
+      font-weight: 500;
+    }
+    &_description{
+      display: flex;
+      justify-content: end;
+      img{
+        width: 3em;
+        margin-left: 1.5em;
+      }
+    }
+    .mat-expansion-panel{
+      p{
+        span{
+          font-weight: 500;
+
+        }
+      }
+
+    }
+
   }
 }
