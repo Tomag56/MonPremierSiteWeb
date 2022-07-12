@@ -126,10 +126,21 @@
       p{
         span{
           font-weight: 500;
-
         }
       }
+    }
+    &_contenu{
+      &_specifique{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        margin-bottom: 1em;
 
+        img{
+          width: 12em;
+        }
+      }
     }
 
   }
