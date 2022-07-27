@@ -11,6 +11,9 @@ import {MatTabsModule} from "@angular/material/tabs";
 import {MatCardModule} from "@angular/material/card";
 import {MatDividerModule} from "@angular/material/divider";
 import {MatExpansionModule} from "@angular/material/expansion";
+import { ContactComponent } from './components/contact/contact.component';
+import {MatListModule} from "@angular/material/list";
+import { MesProjetsComponent } from './components/mes-projets/mes-projets.component';
 
 
 
@@ -19,8 +22,9 @@ import {MatExpansionModule} from "@angular/material/expansion";
   declarations: [
     HomePageComponent,
     MonParcoursComponent,
-    FooterComponent
-
+    FooterComponent,
+    ContactComponent,
+    MesProjetsComponent
   ],
 
   imports: [
@@ -33,14 +37,11 @@ import {MatExpansionModule} from "@angular/material/expansion";
     MatCardModule,
     MatDividerModule,
     MatExpansionModule,
-
-
+    MatListModule,
   ],
 
   exports: [
-
     FooterComponent
-
   ],
 })
 export class CoreModule{ }

@@ -54,3 +54,10 @@ header{
   }
 }
 
+footer{
+  margin-top: 2em;
+  @media (max-width: 650px) {
+    margin-top: 1em;
+  }
+}
+
