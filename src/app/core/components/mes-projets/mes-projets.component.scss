@@ -47,9 +47,40 @@
       justify-content: center;
       align-items: center;
       img{
-        width: 4.5em;
+        width: 7em;
+        height: 7em;
+      }
+      p{
+        text-align: center;
+        height: 8em;
       }
     }
   }
+  &_cartes{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    &_card{
+      max-width: 24em;
+      min-height: 44em;
+      margin-bottom: 3em;
+      img{
 
+      }
+     #caricature{
+       width: 18em;
+       margin: auto;
+     }
+      #eni{
+        width: 24em;
+
+      }
+      a{
+        img{
+          width: 4em;
+        }
+      }
+    }
+  }
 }
